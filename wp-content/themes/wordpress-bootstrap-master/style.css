@@ -1,0 +1,291 @@
+/*
+Theme Name: wp-bootstrap
+Theme URI: http://320press.com/wpbs
+Description: A simple responsive theme based on the Bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
+Version: 3.0
+Author: 320press
+Author URI: http://320press.com
+Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
+License: GNU General Public License v2.0 & Apache License 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+/* HEADS UP: Everything that you will normally find here can be found in the library/less/wp.less */
+
+html, body{
+	min-height: 100%;
+	height:100%;
+}
+
+body{
+	padding-top:0;
+    position: relative;
+}
+
+.cover{
+	min-height: 100%;
+	height: 100%;
+	background: #333;
+	position: relative;
+	padding:0;
+}
+
+#container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#main{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#main article{
+	background-attachment: fixed;
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100%;
+}
+
+body.admin-bar .navbar-fixed-top{
+	top:32px;
+}
+
+.carousel, .carousel-inner, .carousel-inner .item{
+	height: 100%;
+}
+
+
+.carousel-inner .item img{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+#myCarousel .item{
+	background: no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.carousel-caption{
+background: rgba(20,20,20,.5);
+bottom:0px;
+left: 0;
+width: 100%;
+height: 210px;
+}
+
+
+.carousel-indicators{
+	bottom:170px;
+}
+
+.navbar-fixed-top{
+	background: none;
+	height: 100px;
+	-webkit-transition    : .2s;
+  -moz-transition       : .2s;
+  -o-transition         : .2s;
+  transition            : .2s;
+}
+
+header .navbar-nav{
+    float: right;
+}
+
+header .f-nav .navbar-nav{
+    float: left;
+}
+
+.navbar-fixed-top .form-group{
+	position: absolute;
+	right: -220px;
+	 transition: all 0.5s ease;
+}
+
+.navbar-fixed-top a{
+	font-size: 38px;
+}
+
+.f-nav .form-group{
+right: 20px;
+}
+
+.navbar-default{
+	border:none;
+}
+
+.f-nav{
+	background:#DDD;
+	height: 40px;
+    border-bottom:1px solid;
+}
+
+.f-nav a{
+    font-size:12px;
+}
+
+.f-nav a.navbar-brand{
+    font-size:24px;
+}
+
+
+#main article.category-galeria{
+	background-image: url(http://tympanus.net/Blueprints/ScrollingLayout/images/1.jpg);
+}
+
+#main article.category-inicio{
+	background-image: url(http://tympanus.net/Blueprints/ScrollingLayout/images/2.jpg);
+}
+
+
+
+.gweb-smoothscroll-control{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 30px
+}
+.animated-arrow-1 {
+	-webkit-animation: arrow1 3s infinite;
+    animation: arrow1 3s infinite;;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+
+.icon-arrow-hint{
+display: block;
+margin-bottom: 20px
+}
+
+.icon-arrow-hint{
+	background-image: url("https://www.google.com/intl/es/drive/images/drive/icons.png");
+	background-repeat: no-repeat;
+	background-position: 0 -8px;
+	height: 16px;
+	width: 24px;
+	overflow: hidden;
+text-indent: 100%;
+white-space: nowrap;
+position: relative;
+}
+
+
+.hint-wrapper{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+    z-index: 200;
+
+}
+header ul.navbar-nav{
+    margin-top: 10px;
+}
+
+
+header ul.navbar-nav li{
+    background:rgba(0,0,0,.5);
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+header ul.navbar-nav li.active{
+    background:rgba(0,0,0,1);
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+header ul.navbar-nav li.active a{
+    color:#FFF;
+    background: none;
+}
+.navbar-default .navbar-nav > .active > a{
+  color:#FFF;
+  background: none;
+}
+
+.navbar-default.f-nav .navbar-nav > .active > a{
+  color:#FFF;
+  background: #999;
+}
+
+
+
+header ul.navbar-nav a{
+    font-size:14px;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: #DDD;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color:#FFF;
+}
+
+.navbar-nav > li > a{
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+header .f-nav ul.navbar-nav a{
+    font-size:12px;
+    color: #999;
+}
+
+header .f-nav ul.navbar-nav li{
+    background:none;
+}
+
+header .f-nav ul.navbar-nav{
+    border-top:1px solid #999;
+    border-bottom:1px solid #999;
+}
+
+@-webkit-keyframes arrow1 {
+    0% {
+        opacity: 0;
+        top:-60px;
+    }
+
+    50% {
+        opacity: 1;
+        top:0px;
+    }
+
+
+    100% {
+        opacity: 0;
+        top:40px;
+    }
+}
+
+
+@keyframes arrow1 {
+   0% {
+        opacity: 0;
+        top:-60px;
+    }
+
+    50% {
+        opacity: 1;
+        top:0px;
+    }
+
+
+    100% {
+        opacity: 0;
+        top:40px;
+    }
+}
+
+
+
+

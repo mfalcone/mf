@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<circle fill="#FFFFFF" stroke="#666666" stroke-width="5" stroke-linecap="square" stroke-miterlimit="10" cx="8" cy="8" r="4.951" opacity="0">
+	<animate id="anim1" attributeType="CSS" attributeName="opacity" from="0" to="1" dur="1s"  begin="1"  fill="freeze" />
+</circle>
+</svg> 
+
